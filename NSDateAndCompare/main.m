@@ -30,8 +30,8 @@ int main(int argc, const char * argv[]) {
             NSLog(@"start date is later in time than end");
         }if([startDate compare: endDate] == NSOrderedAscending) {
             NSLog(@"start date is earlier in time than end");
-        }else{
-            NSLog(@"HAHA, It is the same time");
+        }if ([startDate compare: endDate] == NSOrderedSame){
+            NSLog(@"HAHA, starts and ends the same time");
         }
         
         //Watch out if the timeStap is the same WITH re
